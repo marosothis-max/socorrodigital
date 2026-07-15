@@ -8,36 +8,33 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-sky-200">
+    <header className="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-2xl group-hover:scale-110 transition-transform">✈️</span>
-            <span className="text-xl font-bold bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-              {siteConfig.name}
-            </span>
+        <div className="flex justify-between items-center h-20">
+          <Link href="/" className="flex items-center gap-3 group">
+            <span className="font-display text-2xl font-light tracking-tight">{siteConfig.name}</span>
           </Link>
 
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
             <Link
               href="/acerca-de"
-              className="text-slate-700 hover:text-sky-600 transition-colors font-medium"
+              className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
             >
-              Quiénes somos
+              Acerca de
             </Link>
-            <Link href="/faq" className="text-slate-700 hover:text-sky-600 transition-colors font-medium">
+            <Link href="/faq" className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider">
               FAQ
             </Link>
             <Link
               href="/contacto"
-              className="text-slate-700 hover:text-sky-600 transition-colors font-medium"
+              className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
             >
               Contacto
             </Link>
           </div>
 
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menú"
           >
@@ -51,14 +48,14 @@ export function Header() {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  strokeWidth={1}
                   d="M6 18L18 6M6 6l12 12"
                 />
               ) : (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  strokeWidth={1}
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               )}
@@ -67,24 +64,24 @@ export function Header() {
         </div>
 
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden pb-4 border-t border-white/10 pt-4">
             <Link
               href="/acerca-de"
-              className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+              className="block py-3 text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Quiénes somos
+              Acerca de
             </Link>
             <Link
               href="/faq"
-              className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+              className="block py-3 text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
               onClick={() => setMobileMenuOpen(false)}
             >
               FAQ
             </Link>
             <Link
               href="/contacto"
-              className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+              className="block py-3 text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contacto
