@@ -5,7 +5,13 @@
       "Bash(mkdir -p \"app/[pais]\" \"app/[pais]/[categoria]\" \"app/[pais]/[categoria]/[tutorial]\" app/acerca-de app/faq app/contacto)",
       "Bash(npm run *)",
       "Bash(curl http://localhost:3000 -I)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit -m 'Agregar guía de despliegue para GitHub y Vercel *)",
+      "Bash(git commit -m 'Agregar resumen completo del proyecto *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(git commit -m 'Actualizar tutorial de residencia de menores con datos correctos *)",
+      "Bash(git commit -m 'Actualizar tema visual con paleta de colores azul celeste suave *)"
     ],
     "additionalDirectories": [
       "D:\\Proyectos\\SocorroDigital\\app"

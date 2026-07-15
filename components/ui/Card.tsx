@@ -8,11 +8,11 @@ interface CardProps {
 }
 
 export function Card({ children, className = "", onClick, hover = false }: CardProps) {
-  const hoverStyles = hover ? "hover:shadow-lg hover:scale-105 cursor-pointer" : ""
+  const hoverStyles = hover ? "hover:shadow-xl hover:shadow-sky-200/50 hover:-translate-y-1 cursor-pointer border-sky-300" : "border-sky-200"
 
   return (
     <div
-      className={`bg-white rounded-lg shadow-md p-6 transition-all ${hoverStyles} ${className}`}
+      className={`bg-white/80 backdrop-blur-sm rounded-xl shadow-md border-2 p-6 transition-all ${hoverStyles} ${className}`}
       onClick={onClick}
     >
       {children}
@@ -35,7 +35,7 @@ interface CardTitleProps {
 }
 
 export function CardTitle({ children, className = "" }: CardTitleProps) {
-  return <h3 className={`text-xl font-bold text-gray-900 ${className}`}>{children}</h3>
+  return <h3 className={`text-xl font-bold text-slate-800 ${className}`}>{children}</h3>
 }
 
 interface CardContentProps {
@@ -44,5 +44,5 @@ interface CardContentProps {
 }
 
 export function CardContent({ children, className = "" }: CardContentProps) {
-  return <div className={`text-gray-600 ${className}`}>{children}</div>
+  return <div className={`text-slate-600 ${className}`}>{children}</div>
 }

@@ -12,11 +12,11 @@ export function CountryCard({ country }: CountryCardProps) {
       <Card className="opacity-75">
         <CardHeader>
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-4xl">{country.flag}</span>
+            <span className="text-5xl">{country.flag}</span>
             <CardTitle>{country.name}</CardTitle>
           </div>
-          <span className="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">
-            Próximamente
+          <span className="inline-block px-3 py-1 bg-amber-100 text-amber-700 text-sm rounded-full font-medium">
+            ⏳ Próximamente
           </span>
         </CardHeader>
         <CardContent>
@@ -31,11 +31,11 @@ export function CountryCard({ country }: CountryCardProps) {
       <Card hover>
         <CardHeader>
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-4xl">{country.flag}</span>
+            <span className="text-5xl">{country.flag}</span>
             <CardTitle>{country.name}</CardTitle>
           </div>
-          <span className="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
-            Disponible
+          <span className="inline-block px-3 py-1 bg-sky-100 text-sky-700 text-sm rounded-full font-medium shadow-sm">
+            ✓ Disponible
           </span>
         </CardHeader>
         <CardContent>
