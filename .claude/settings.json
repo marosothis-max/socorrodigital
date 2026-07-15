@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(mkdir -p \"app/[pais]\" \"app/[pais]/[categoria]\" \"app/[pais]/[categoria]/[tutorial]\" app/acerca-de app/faq app/contacto)",
+      "Bash(npm run *)",
+      "Bash(curl http://localhost:3000 -I)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": [
+      "D:\\Proyectos\\SocorroDigital\\app"
+    ]
+  }
+}

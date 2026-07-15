@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤝 SocorroDigital
 
-## Getting Started
+**Tu guía gratuita para realizar trámites migratorios y legales de forma autónoma**
 
-First, run the development server:
+SocorroDigital es una plataforma de ayuda humanitaria creada por y para migrantes venezolanos y de todas las nacionalidades. Ofrecemos tutoriales gratuitos, claros y paso a paso para que puedas realizar tus propios trámites migratorios y legales sin necesidad de pagar a gestores.
+
+## 🎯 Misión
+
+Empoderar a migrantes para que puedan regularizar su situación migratoria de forma autónoma, ahorrando tiempo y dinero, evitando abusos y construyendo una vida digna en el país que los acoge.
+
+## ✨ Características
+
+- ✅ **100% Gratuito** - Sin costos ocultos, sin suscripciones
+- 📝 **Tutoriales paso a paso** - Información clara y sin tecnicismos
+- 🌍 **Múltiples países** - España activo, Francia y EEUU próximamente
+- 📱 **Mobile-first** - Diseñado para funcionar perfectamente en móviles
+- 🔄 **Actualizado constantemente** - Información verificada y al día
+
+## 🗂️ Países y Categorías
+
+### España 🇪🇸 (Activo)
+- **Migración**: Residencias, permisos de trabajo, nacionalidad
+- Próximamente: Vivienda, Empleo, Salud, Educación, Trámites Bancarios
+
+### Francia 🇫🇷 (Próximamente)
+### Estados Unidos 🇺🇸 (Próximamente)
+
+## 🚀 Tecnologías
+
+- **Framework**: Next.js 15 (App Router)
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS
+- **Deployment**: Vercel
+- **Arquitectura**: Escalable y modular (País → Categoría → Tutorial)
+
+## 💻 Desarrollo Local
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Compilar para producción
+npm run build
+
+# Ejecutar producción
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La aplicación estará disponible en [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Estructura del Proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/                    # Pages (Next.js App Router)
+│   ├── [pais]/            # Rutas dinámicas por país
+│   ├── acerca-de/         # Quiénes somos
+│   ├── faq/               # Preguntas frecuentes
+│   └── contacto/          # Contacto
+├── components/            # Componentes React
+│   ├── ui/               # Componentes base
+│   ├── layout/           # Header, Footer
+│   ├── country/          # Componentes de país
+│   ├── category/         # Componentes de categoría
+│   └── tutorial/         # Componentes de tutorial
+├── config/               # Configuración
+│   ├── site.ts          # Config general
+│   ├── countries.ts     # Config de países
+│   └── categories.ts    # Config de categorías
+├── content/              # Contenido de tutoriales
+└── types/                # TypeScript types
+```
 
-## Learn More
+## 🤝 Contribuir
 
-To learn more about Next.js, take a look at the following resources:
+¿Has pasado por un trámite que no está en la plataforma? ¿Encontraste información desactualizada? ¡Nos encantaría tu ayuda!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Abre un Issue describiendo el tutorial que falta o la corrección necesaria
+2. Fork del repositorio
+3. Crea una rama con tu contribución
+4. Envía un Pull Request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Aviso Legal
 
-## Deploy on Vercel
+La información en SocorroDigital es orientativa y se basa en fuentes oficiales. No sustituye el asesoramiento legal profesional. Siempre verifica la información con las autoridades competentes y consulta con un abogado para casos complejos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💖 Creado por
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Maro. G**
+
+Migrante, desarrollador y creador de SocorroDigital. Convirtiendo la experiencia migratoria en herramientas útiles para la comunidad.
+
+## 📄 Licencia
+
+Este proyecto está bajo licencia MIT. El contenido está disponible para uso educativo y no comercial.
+
+---
+
+**SocorroDigital** - Ayudando a migrantes a construir una vida digna a través de la información gratuita y accesible.
+
+🌐 [socorrodigital.vercel.app](https://socorrodigital.vercel.app)
