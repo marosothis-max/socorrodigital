@@ -121,83 +121,144 @@ export const espanaMigracionTutorials: Tutorial[] = [
   {
     id: "cambio-humanitaria-menores",
     title:
-      "Cambio de residencia humanitaria (menores) a Residencia de menores extranjeros no nacidos en España",
+      "Residencia de menores extranjeros no nacidos en España",
     slug: "cambio-humanitaria-menores",
     countryId: "espana",
     categoryId: "migracion-espana",
     description:
-      "Procedimiento para cambiar la residencia humanitaria de un menor a residencia de menores extranjeros no nacidos en España",
+      "Procedimiento para obtener la residencia de menores extranjeros no nacidos en España",
     difficulty: "intermedio",
-    estimatedTime: "25-40 minutos de lectura",
+    estimatedTime: "30-40 minutos de lectura",
     lastUpdated: new Date("2026-07-15"),
     introduction:
-      "Si tu hijo o hija menor de edad tiene residencia por razones humanitarias, puede solicitar el cambio a una residencia de menores extranjeros no nacidos en España cuando cumpla ciertos requisitos.",
+      "Si tu hijo o hija menor de edad nació fuera de España y reside aquí, puede solicitar la residencia de menores extranjeros no nacidos en España. Este trámite permite regularizar la situación del menor de forma estable.",
     requirements: [
       "Ser menor de edad",
-      "Tener residencia por razones humanitarias en vigor",
-      "Haber cursado educación en España durante mínimo 2 años",
-      "Padres con residencia legal en España",
+      "Pasaporte completo del menor",
+      "Acta de nacimiento legalizada y apostillada",
+      "Si uno de los representantes no tiene patria potestad, no debe de tener la sentencia (patria potestad apostillada)",
+      "Certificado de escolaridad",
+      "Tarjeta de residencia del progenitor que hace el trámite",
+      "Certificado de empadronamiento colectivo",
+      "Certificado de impuesto modelo 790-052 (10,94€)",
     ],
     documents: [
-      "Modelo de solicitud EX-10",
-      "Pasaporte o documento de identidad del menor en vigor",
-      "Tarjeta de residencia actual del menor",
-      "Certificado de empadronamiento",
-      "Certificado académico que acredite la escolarización",
-      "Documentación de los padres (NIE, pasaporte, residencia)",
-      "Libro de familia o certificado de nacimiento",
+      "Formulario EX-25",
+      "Pasaporte completo del menor",
+      "Acta de nacimiento legalizada y apostillada",
+      "Sentencia de patria potestad apostillada (si aplica)",
+      "Certificado de escolaridad",
+      "Tarjeta de residencia del progenitor",
+      "Certificado de empadronamiento colectivo",
+      "Modelo 790-052 pagado (10,94€)",
     ],
-    where: "Oficina de Extranjería o comisaría de policía con cita previa.",
-    how: "Solicitar cita previa en la web del Ministerio del Interior para trámites de extranjería.",
-    costs: "Tasa: 10,71€ (Modelo 790 Código 012)",
+    where: "Vía presencial, solicitando cita en la oficina de extranjería de tu comunidad de residencia. También se puede realizar vía telemática a través de la web Mercurio.",
+    how: "Se solicita a través del formulario EX-25. Debe solicitarse 60 días antes del vencimiento de la autorización actual (si la tiene). Los padres deben estar vigentes (con residencia en regla).",
+    costs: "Tasa modelo 790-052: 10,94€",
     commonMistakes: [
-      "No acreditar suficientes años de escolarización",
-      "Presentar documentos extranjeros sin apostillar",
-      "No actualizar el empadronamiento",
+      "No apostillar el acta de nacimiento correctamente",
+      "No presentar la sentencia de patria potestad cuando uno de los padres no tiene la custodia",
+      "No actualizar el certificado de empadronamiento colectivo",
+      "Olvidar el certificado de escolaridad actualizado",
+      "No solicitar con suficiente antelación (mínimo 60 días antes del vencimiento)",
     ],
     steps: [
       {
         number: 1,
-        title: "Verifica la escolarización",
+        title: "Verifica que cumples los requisitos",
         content:
-          "Solicita en el colegio o instituto un certificado que acredite que el menor ha cursado al menos 2 años de educación en España.",
+          "Asegúrate de que el menor cumple todos los requisitos: ser menor de edad, tener el pasaporte en vigor, y que al menos uno de los padres tenga residencia legal en España.",
       },
       {
         number: 2,
-        title: "Reúne la documentación",
-        content: "Prepara todos los documentos necesarios, incluyendo los de los padres.",
+        title: "Legaliza y apostilla el acta de nacimiento",
+        content:
+          "Obtén el acta de nacimiento del menor de su país de origen. Debe estar legalizada y apostillada según el Convenio de La Haya.",
+        warning:
+          "Este proceso puede tardar semanas o meses. Inicia este trámite con mucha antelación.",
       },
       {
         number: 3,
-        title: "Rellena el modelo EX-10",
-        content: "Descarga y completa el formulario de solicitud.",
+        title: "Si aplica: obtén la sentencia de patria potestad",
+        content:
+          "Si uno de los representantes (padres) no tiene la patria potestad, no debe presentar la sentencia. Solo se presenta si hay casos especiales de custodia compartida o situaciones legales particulares. Esta sentencia también debe estar apostillada.",
+        tip: "Consulta con un abogado si tienes dudas sobre tu situación de patria potestad.",
       },
       {
         number: 4,
-        title: "Paga la tasa",
-        content: "Descarga el modelo 790 código 012 y págalo en el banco.",
+        title: "Solicita el certificado de escolaridad",
+        content:
+          "Acude al colegio o instituto donde estudia el menor y solicita un certificado de escolaridad que acredite que está matriculado y asistiendo regularmente a clases.",
       },
       {
         number: 5,
-        title: "Pide cita previa",
-        content: "Solicita cita en la oficina de extranjería correspondiente.",
+        title: "Obtén el certificado de empadronamiento colectivo",
+        content:
+          "Solicita en tu ayuntamiento un certificado de empadronamiento colectivo donde aparezcan todos los miembros de la familia que viven en el domicilio.",
       },
       {
         number: 6,
-        title: "Acude a la cita",
+        title: "Descarga y rellena el formulario EX-25",
         content:
-          "Presenta toda la documentación. Debe acudir al menos uno de los padres con el menor.",
-        tip: "Lleva originales y copias de todos los documentos.",
+          "Descarga el formulario EX-25 desde la página web del Ministerio del Interior. Rellénalo con los datos del menor y del progenitor que realiza el trámite.",
       },
       {
         number: 7,
+        title: "Paga la tasa modelo 790-052",
+        content:
+          "Descarga el modelo 790-052, rellénalo y págalo en el banco. El importe actual es de 10,94€. Conserva el justificante de pago.",
+      },
+      {
+        number: 8,
+        title: "Solicita cita previa",
+        content:
+          "Puedes solicitar cita de dos formas: presencialmente en la oficina de extranjería de tu comunidad, o vía telemática a través de la web Mercurio.",
+        tip: "La vía telemática puede ser más rápida en algunas comunidades. Consulta las opciones disponibles en tu zona.",
+      },
+      {
+        number: 9,
+        title: "Acude a la cita o presenta telemáticamente",
+        content:
+          "Si elegiste la vía presencial, acude a tu cita con todos los documentos originales y copias. Si es telemática, sube todos los documentos escaneados a través de la plataforma web Mercurio.",
+        warning:
+          "Recuerda que debe solicitarse 60 días antes del vencimiento si el menor ya tiene una autorización previa. Los padres deben estar vigentes (con residencia en regla).",
+      },
+      {
+        number: 10,
         title: "Espera la resolución",
-        content: "El plazo es de 3 meses. Si es favorable, te citarán para recoger la tarjeta.",
+        content:
+          "El plazo de resolución es de 3 meses. Si no hay respuesta en ese tiempo, consulta el estado de tu expediente online o en la oficina de extranjería.",
+      },
+      {
+        number: 11,
+        title: "Recoge la tarjeta de residencia del menor",
+        content:
+          "Una vez aprobada la solicitud, recibirás una notificación para recoger la tarjeta de residencia del menor. Deberás pagar otra tasa para la expedición de la tarjeta física.",
       },
     ],
-    tags: ["menores", "residencia", "humanitaria", "españa", "extranjería", "escolarización"],
+    downloads: [
+      {
+        title: "Formulario EX-25",
+        description: "Solicitud de residencia de menores extranjeros no nacidos en España",
+        url: "https://extranjeros.inclusion.gob.es/ficheros/Modelos_solicitudes/mod_solicitudes2/25-Formulario_Casillas_ES.pdf",
+        type: "pdf",
+      },
+      {
+        title: "Modelo 790-052",
+        description: "Tasa para residencia de menores",
+        url: "https://sede.policia.gob.es/Tasa790_012/",
+        type: "pdf",
+      },
+      {
+        title: "Web Mercurio (trámite telemático)",
+        description: "Plataforma para realizar el trámite online",
+        url: "https://sede.administracionespublicas.gob.es/",
+        type: "pdf",
+      },
+    ],
+    tags: ["menores", "residencia", "extranjeros", "españa", "extranjería", "escolarización", "no nacidos en España"],
     legalDisclaimer:
-      "Esta información es orientativa. Consulta con un abogado especializado en extranjería para casos particulares.",
+      "Esta información es orientativa. Consulta con un abogado especializado en extranjería para casos particulares. Verifica siempre los requisitos actualizados en la web oficial del Ministerio del Interior.",
   },
   {
     id: "solicitud-nacionalidad-espanola",
