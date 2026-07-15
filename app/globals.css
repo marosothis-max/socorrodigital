@@ -168,25 +168,25 @@ html {
   animation: bounceIn 0.8s ease-out forwards;
 }
 
-/* Gradientes vibrantes */
+/* Colores Razorpay Sprint 26 - Exactos */
+:root {
+  --razorpay-blue: #1515FF;
+  --razorpay-black: #151515;
+  --razorpay-white: #FFFFFF;
+  --razorpay-gray: #808080;
+}
+
+/* Gradientes con los colores correctos */
 .gradient-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1515FF 0%, #0000CC 100%);
 }
 
 .gradient-blue {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: #1515FF;
 }
 
-.gradient-orange {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-}
-
-.gradient-green {
-  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
-}
-
-.gradient-pink {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+.gradient-black {
+  background: #151515;
 }
 
 /* Glassmorphism moderno */
