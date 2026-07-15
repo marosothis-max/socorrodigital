@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { siteConfig } from "@/config/site"
+import { Logo } from "@/components/ui/Logo"
 
 export function Footer() {
   return (
@@ -13,8 +14,8 @@ export function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-3xl">✈️</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Logo className="w-12 h-12" />
               <span className="text-3xl font-black">{siteConfig.name}</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">

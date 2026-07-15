@@ -1,6 +1,7 @@
 import { CountryCard } from "@/components/country/CountryCard"
 import { countries } from "@/config/countries"
 import { siteConfig } from "@/config/site"
+import { Logo } from "@/components/ui/Logo"
 
 export default function Home() {
   return (
@@ -15,15 +16,22 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-white rounded-full opacity-10 blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
 
           {/* Iconos flotantes */}
-          <div className="floating-icon top-1/4 left-1/4 text-6xl text-white/20 animate-float">✈️</div>
+          <div className="floating-icon top-1/4 left-1/4 opacity-20 animate-float">
+            <Logo className="w-24 h-24 opacity-50" animated={false} />
+          </div>
           <div className="floating-icon top-1/3 right-1/4 text-5xl text-white/20 animate-floatSlow">🌍</div>
           <div className="floating-icon bottom-1/3 left-1/3 text-4xl text-white/20 animate-float" style={{animationDelay: '1s'}}>📋</div>
         </div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Logo grande en el hero */}
+          <div className="mb-8 animate-bounceIn flex justify-center">
+            <Logo className="w-32 h-32" />
+          </div>
+
           {/* Badge */}
-          <div className="mb-8 animate-bounceIn">
+          <div className="mb-8 animate-bounceIn" style={{animationDelay: '0.3s'}}>
             <span className="inline-block px-8 py-3 bg-white text-[#1515FF] rounded-full font-bold text-sm shadow-xl">
               🚀 Tu viaje migratorio comienza aquí
             </span>
