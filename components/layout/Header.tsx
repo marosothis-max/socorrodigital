@@ -8,33 +8,34 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/10">
+    <header className="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-100 shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center gap-3 group">
-            <span className="font-display text-2xl font-light tracking-tight">{siteConfig.name}</span>
+          <Link href="/" className="flex items-center gap-2 group">
+            <span className="text-3xl animate-float">✈️</span>
+            <span className="text-2xl font-black text-gradient">{siteConfig.name}</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="/acerca-de"
-              className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
+              className="text-gray-700 hover:text-purple-600 transition-colors font-semibold"
             >
               Acerca de
             </Link>
-            <Link href="/faq" className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider">
+            <Link href="/faq" className="text-gray-700 hover:text-purple-600 transition-colors font-semibold">
               FAQ
             </Link>
             <Link
               href="/contacto"
-              className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
+              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
               Contacto
             </Link>
           </div>
 
           <button
-            className="md:hidden p-2 text-white"
+            className="md:hidden p-2 text-gray-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menú"
           >
@@ -48,14 +49,14 @@ export function Header() {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={1}
+                  strokeWidth={2}
                   d="M6 18L18 6M6 6l12 12"
                 />
               ) : (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={1}
+                  strokeWidth={2}
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               )}
@@ -64,24 +65,24 @@ export function Header() {
         </div>
 
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4 border-t border-white/10 pt-4">
+          <div className="md:hidden pb-4 border-t border-gray-100 pt-4">
             <Link
               href="/acerca-de"
-              className="block py-3 text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
+              className="block py-3 text-gray-700 hover:text-purple-600 transition-colors font-semibold"
               onClick={() => setMobileMenuOpen(false)}
             >
               Acerca de
             </Link>
             <Link
               href="/faq"
-              className="block py-3 text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
+              className="block py-3 text-gray-700 hover:text-purple-600 transition-colors font-semibold"
               onClick={() => setMobileMenuOpen(false)}
             >
               FAQ
             </Link>
             <Link
               href="/contacto"
-              className="block py-3 text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider"
+              className="block py-3 text-gray-700 hover:text-purple-600 transition-colors font-semibold"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contacto
