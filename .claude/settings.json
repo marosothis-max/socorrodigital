@@ -19,7 +19,9 @@
       "Bash(git commit -m 'Rediseño completo estilo Razorpay Sprint 26 - Vibrante y moderno *)",
       "Bash(git commit -m 'Actualizar a colores exactos de Razorpay Sprint 26 *)",
       "Bash(mkdir -p public/images/logo)",
-      "Bash(git commit -m 'Agregar soporte para logo personalizado en toda la web *)"
+      "Bash(git commit -m 'Agregar soporte para logo personalizado en toda la web *)",
+      "Bash(git commit -m 'Crear logo SVG personalizado con diseño de migración venezolana *)",
+      "Bash(git commit -m 'Configurar logo para usar imagen real del usuario *)"
     ],
     "additionalDirectories": [
       "D:\\Proyectos\\SocorroDigital\\app",
