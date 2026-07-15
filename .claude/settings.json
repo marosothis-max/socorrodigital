@@ -11,7 +11,8 @@
       "Bash(git commit -m 'Agregar resumen completo del proyecto *)",
       "Bash(curl -s http://localhost:3000)",
       "Bash(git commit -m 'Actualizar tutorial de residencia de menores con datos correctos *)",
-      "Bash(git commit -m 'Actualizar tema visual con paleta de colores azul celeste suave *)"
+      "Bash(git commit -m 'Actualizar tema visual con paleta de colores azul celeste suave *)",
+      "Bash(git commit -m 'Rediseño premium estilo award-winning con animaciones *)"
     ],
     "additionalDirectories": [
       "D:\\Proyectos\\SocorroDigital\\app"
